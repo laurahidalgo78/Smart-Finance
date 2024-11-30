@@ -9,6 +9,19 @@ export const estilosGlobal = StyleSheet.create({
         margin:20,
         padding:20
     },
+    contenedorRegistro:{
+        display:'flex',
+        flexDirection:'column',
+        justifyContent:'center',
+        alignItems:'center',
+        marginLeft:20,
+        marginRight:20,
+     },
+     logoSmartRegistro:{
+        width:200, 
+        height:200,
+        borderRadius:100
+    },
     logoSmart:{
         width:200, 
         height:200,
@@ -26,6 +39,10 @@ export const estilosGlobal = StyleSheet.create({
     campoForm:{
         marginTop:20,
         marginBottom:20
+    },
+    campoFormRegistro:{
+        marginTop:10,
+        marginBottom:10
     },
     registro:{
         width:'100%',
