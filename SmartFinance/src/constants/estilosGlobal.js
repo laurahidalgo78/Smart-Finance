@@ -54,5 +54,25 @@ export const estilosGlobal = StyleSheet.create({
     textoRegistro:{
         fontFamily: 'fantasy',
         fontSize:16
-    }
+    },
+    textoBienvenida:{
+        fontFamily: 'fantasy',
+        fontSize:25
+    },
+    textoDinero:{
+        fontFamily: 'fantasy',
+        fontSize:16
+    },
+    contenedorTextoBienvenida:{
+        margin:10
+    },
+    contenedorCards:{
+        margin:20,
+        padding:20,
+    },
+    cardsBienvenida:{
+        marginBottom:20,
+        padding:20,
+        width:250,        
+    },
 });
