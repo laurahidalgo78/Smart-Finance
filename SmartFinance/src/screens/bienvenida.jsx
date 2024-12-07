@@ -2,8 +2,10 @@ import { View , ScrollView } from 'react-native';
 import { Icon , Card , Text} from 'react-native-paper';
 import { SafeAreaView , SafeAreaProvider} from 'react-native-safe-area-context';
 import { estilosGlobal } from '../constants/estilosGlobal';
+import { useNavigation } from '@react-navigation/native';
 
 export default function bienvenida(){
+    const navegacion = useNavigation();
     return (
        <SafeAreaProvider>
             <SafeAreaView style={estilosGlobal.contenedor}>
@@ -22,7 +24,7 @@ export default function bienvenida(){
                         
                     </View>
                     <View style={estilosGlobal.contenedorCards} >
-                        <Card style={estilosGlobal.cardsBienvenida}>
+                        <Card style={estilosGlobal.cardsBienvenida} onPress={()=> navegacion.navigate("ingresos")}>
                             
                             <Card.Content>
                                 <Text variant="titleLarge">INGRESOS</Text>                                    
