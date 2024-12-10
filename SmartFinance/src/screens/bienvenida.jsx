@@ -38,7 +38,7 @@ export default function bienvenida(){
                             </Card.Content>
                             <Card.Cover source={{  uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlJ_lb4zMj9juK4CIVCU4MD6NyHDG1tCFROg&s"}}/>
                         </Card>
-                        <Card style={estilosGlobal.cardsBienvenida}>
+                        <Card style={estilosGlobal.cardsBienvenida} onPress={()=> navegacion.navigate("inversiones")}>
                             
                             <Card.Content>
                                 <Text variant="titleLarge">INVERSIONES</Text>                                    
