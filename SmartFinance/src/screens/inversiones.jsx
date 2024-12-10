@@ -26,42 +26,82 @@ export default function inversiones(){
         <SafeAreaProvider>
             <SafeAreaView style={estilosGlobal.contenedor}>
                 <ScrollView>
-                {datosRegistrados.length > 0 && (
-                    <View style={estilosGlobal.datosRegistradosContainer}>
-                        {datosRegistrados.map((usuario, index) => (
-                            <View key={index} style={{ marginBottom: 10 }}>
-                                <Text>Hola, {usuario.nombres}  {usuario.apellidos}</Text>
+                    <ScrollView>
+                        {datosRegistrados.length > 0 && (
+                            <View style={estilosGlobal.datosRegistradosContainer}>
+                                {datosRegistrados.map((usuario, index) => (
+                                    <View key={index} style={{ marginBottom: 10 }}>
+                                        <Text>Hola, {usuario.nombres}  {usuario.apellidos}</Text>
+                                    </View>
+                                ))}
                             </View>
-                        ))}
-                    </View>
-                )}
-                    <Card style={estilosGlobal.cardsSaldoInversiones}>
-                        <Card.Content>
-                            <Text variant="titleLarge" style={estilosGlobal.textoSaldo}>Saldo</Text> 
-                            <Card>
-                                <Card.Content >
+                        )}
+                        <Card style={estilosGlobal.cardsSaldoInversiones}>
+                            <Card.Content>
+                                <Text variant="titleLarge" style={estilosGlobal.textoSaldo}>Saldo</Text> 
+                                <Card>
+                                    <Card.Content >
 
-                                    <Text style={estilosGlobal.textoNumeroSaldo}>$1.500.000 (COP)
-                                    <Icon
-                                        source="eye"
-                                        size= {20}
-                                    />   
-                                    </Text> 
-                                    
-                                </Card.Content>
-                            </Card>                                   
-                        </Card.Content>    
-                    </Card>
-                    <Text variant="titleLarge" style={estilosGlobal.textoIngresos}>INVERSIONES</Text> 
-                    
-                    <View>
-                       <Image style={estilosGlobal.imagenInversion} source={require("../../assets/inversionesWow.png")}/>
-                    </View>
-
-
-
+                                        <Text style={estilosGlobal.textoNumeroSaldo}>$1.500.000 (COP)
+                                        <Icon
+                                            source="eye"
+                                            size= {20}
+                                        />   
+                                        </Text> 
+                                        
+                                    </Card.Content>
+                                </Card>                                   
+                            </Card.Content>    
+                        </Card>
+                        <Text variant="titleLarge" style={estilosGlobal.textoIngresos}>INVERSIONES</Text> 
+                        
+                        <View>
+                        <Image style={estilosGlobal.imagenInversion} source={require("../../assets/inversionesWow.png")}/>
+                        </View>
+                        <View style={estilosGlobal.contenedorAccionesGlobales}>
+                            <View style={estilosGlobal.contenedorAcciones}>
+                                <View style={estilosGlobal.contenedorImagenEmpresa}>
+                                    <Image style={estilosGlobal.imagenEmpresa} source={require("../../assets/bitcoin-logo.png")}/>
+                                </View>
+                                <View style={estilosGlobal.contenedorBotonesCompraVenta}>
+                                    <Button mode="contained" style={estilosGlobal.botonVenta}>
+                                        Vender
+                                    </Button>
+                                    <Button mode="contained" style={estilosGlobal.botonCompra}>
+                                        Comprar
+                                    </Button>
+                                </View>
+                            </View>
+                            <View style={estilosGlobal.contenedorAcciones}>
+                                <View style={estilosGlobal.contenedorImagenEmpresa}>
+                                    <Image style={estilosGlobal.imagenEmpresa} source={require("../../assets/ethereum-logo.jpg")}/>
+                                </View>
+                                <View style={estilosGlobal.contenedorBotonesCompraVenta}>
+                                    <Button mode="contained" style={estilosGlobal.botonVenta}>
+                                        Vender
+                                    </Button>
+                                    <Button mode="contained" style={estilosGlobal.botonCompra}>
+                                        Comprar
+                                    </Button>
+                                </View>
+                            </View>
+                            <View style={estilosGlobal.contenedorAcciones}>
+                                <View style={estilosGlobal.contenedorImagenEmpresa}>
+                                    <Image style={estilosGlobal.imagenEmpresa} source={require("../../assets/tesla-logo.png")}/>
+                                </View>
+                                <View style={estilosGlobal.contenedorBotonesCompraVenta}>
+                                    <Button mode="contained" style={estilosGlobal.botonVenta}>
+                                        Vender
+                                    </Button>
+                                    <Button mode="contained" style={estilosGlobal.botonCompra}>
+                                        Comprar
+                                    </Button>
+                                </View>
+                            </View>
+                        </View>
+                    </ScrollView>
                 </ScrollView>             
             </SafeAreaView>
-       </SafeAreaProvider>       
+       </SafeAreaProvider> 
     )
 }

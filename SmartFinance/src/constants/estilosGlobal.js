@@ -176,6 +176,53 @@ export const estilosGlobal = StyleSheet.create({
         marginTop: 20,
         marginBottom: 5
     },
+    contenedorAccionesGlobales: {
+        width: '100%',
+        height: 'auto',
+        marginTop: 30,
+        marginBottom: 30,
+    },
+    contenedorAcciones:{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginBottom: 20,
+        width: '100%'
+    },
+    contenedorImagenEmpresa: {
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    imagenEmpresa:{
+        width:70, 
+        height:40,
+        objectFit: 'fill',
+        aspectRatio: '9/5'
+    },
+    contenedorBotonesCompraVenta:{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        flexDirection: 'row'
+    },
+    botonCompra: {
+        backgroundColor: '#090',
+        borderRadius: 1,
+        boxShadow: '3px 8px 21px -11px rgba(0,0,0,0.75)',
+        '-webkit-box-shadow': '3px 8px 21px -11px rgba(0,0,0,0.75)',
+        '-moz-box-shadow': '3px 8px 21px -11px rgba(0,0,0,0.75)'
+    },
+    botonVenta: {
+        backgroundColor: '#900',
+        marginEnd: 5,
+        borderRadius: 1,
+        boxShadow: '3px 8px 21px -11px rgba(0,0,0,0.75)',
+        '-webkit-box-shadow': '3px 8px 21px -11px rgba(0,0,0,0.75)',
+        '-moz-box-shadow': '3px 8px 21px -11px rgba(0,0,0,0.75)'
+    },
     contenedorValorGastos:{
         display: 'flex',
         alignItems: 'center'
