@@ -147,6 +147,10 @@ export const estilosGlobal = StyleSheet.create({
         height:50,
         borderRadius:100,
     },
+    imagenInversion:{
+        width:"100%", 
+        height: 200,
+    },
     contenedorValorBanco:{
         display: 'flex',
         alignItems: 'center'

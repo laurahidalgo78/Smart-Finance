@@ -31,7 +31,7 @@ export default function bienvenida(){
                             </Card.Content>
                             <Card.Cover source={{  uri: "https://blog.nubox.com/hubfs/%C2%BFQu%C3%A9%20es%20ingreso%20en%20contabilidad.jpg"}}/>
                         </Card>
-                        <Card style={estilosGlobal.cardsBienvenida}>
+                        <Card style={estilosGlobal.cardsBienvenida}  onPress={()=> navegacion.navigate("gastos")}>
                             
                             <Card.Content>
                                 <Text variant="titleLarge">GASTOS</Text>                                    
@@ -45,7 +45,7 @@ export default function bienvenida(){
                             </Card.Content>
                             <Card.Cover source={{  uri: "https://bc-business-directory.com/wp-content/uploads/2020/10/que-es-la-gestion-de-inversiones.jpg"}}/>
                         </Card>
-                        <Card style={estilosGlobal.cardsBienvenida}>
+                        <Card style={estilosGlobal.cardsBienvenida} onPress={()=> navegacion.navigate("ahorro")}>
                             
                             <Card.Content>
                                 <Text variant="titleLarge">AHORRO</Text>                                    
