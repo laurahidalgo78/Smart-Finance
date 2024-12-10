@@ -112,6 +112,11 @@ export const estilosGlobal = StyleSheet.create({
         fontFamily: 'fantasy',
         marginTop: 10
     },
+    textoAhorro:{
+        fontSize: 30,
+        fontFamily: 'fantasy',
+        marginTop: 10
+    },
     cardFecha:{
         backgroundColor: '#dddddd'
     },
@@ -166,5 +171,49 @@ export const estilosGlobal = StyleSheet.create({
         height: '200',
         marginTop: 20,
         marginBottom: 5
-    }
+    },
+
+    contenedorPrincipalAhorro:{
+        //display: 'flex',
+        //flexDirection: 'column',
+        //justifyContent: 'space-between',
+        width: '100%',
+        height: 'auto',
+        marginTop: 30,
+        marginBottom: 10,
+       // padding: 10
+    },
+    contenedorAhorro:{
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginBottom: 20
+    },
+    contenedorImagenAhorro:{
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        width: '50%'
+    },
+    imagenAhorro:{
+        width:50, 
+        height:50,
+        borderRadius:100,
+    },
+    contenedorValorAhorro:{
+        display: 'flex',
+        alignItems: 'center'
+    },
+    textoValorAhorro:{
+        display: 'inline',
+        fontFamily: 'fantasy',
+        fontSize: 17,
+        color: '#09D886'
+    },
+    nombreAhorro:{
+        fontFamily: 'fantasy',
+        fontSize: 17
+    },
 });
