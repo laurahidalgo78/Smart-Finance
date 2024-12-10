@@ -176,6 +176,46 @@ export const estilosGlobal = StyleSheet.create({
         marginTop: 20,
         marginBottom: 5
     },
+    contenedorValorGastos:{
+        display: 'flex',
+        alignItems: 'center'
+    },
+    textoValorGastos:{
+        display: 'inline',
+        fontFamily: 'fantasy',
+        fontSize: 17,
+        color: '#E14D58'
+    },
+    nombreGastos:{
+        fontFamily: 'fantasy',
+        fontSize: 17
+    },
+    imagenGraficaGastos:{
+        width: '100%',
+        height: '200',
+        marginTop: 20,
+        marginBottom: 5
+    },
+    contenedorValorGastos:{
+        display: 'flex',
+        alignItems: 'center'
+    },
+    textoValorGastos:{
+        display: 'inline',
+        fontFamily: 'fantasy',
+        fontSize: 17,
+        color: '#E14D58'
+    },
+    nombreGastos:{
+        fontFamily: 'fantasy',
+        fontSize: 17
+    },
+    imagenGraficaGastos:{
+        width: '100%',
+        height: '200',
+        marginTop: 20,
+        marginBottom: 5
+    },
 
     contenedorPrincipalAhorro:{
         //display: 'flex',

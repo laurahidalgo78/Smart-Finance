@@ -30,7 +30,7 @@ export default function ingresos(){
                     <Card style={estilosGlobal.cardFecha}>
                         <Card.Content style={estilosGlobal.contenidoCardFecha}>
                             <Text >Fecha consulta: dd/mm/aaaa</Text> 
-                            <Text >Total ingresos: ......
+                            <Text >Total Ingresos: ......
                                 <Icon
                                         source="eye"
                                         size= {20}
@@ -45,7 +45,7 @@ export default function ingresos(){
                                 <Text style={estilosGlobal.nombreBanco}>Davivienda</Text>
                             </View>
                             <View style={estilosGlobal.contenedorValorBanco}>
-                                <Text style={estilosGlobal.textoValorBanco}>1.000.000</Text>
+                                <Text style={estilosGlobal.textoValorBanco}>$1.000.000</Text>
                             </View>
                         </View>
                         <View style={estilosGlobal.contenedorBancos}>
@@ -54,7 +54,7 @@ export default function ingresos(){
                                 <Text style={estilosGlobal.nombreBanco}>Caja Social</Text>
                             </View>
                             <View style={estilosGlobal.contenedorValorBanco}>
-                                <Text style={estilosGlobal.textoValorBanco}>500.000</Text>
+                                <Text style={estilosGlobal.textoValorBanco}>$500.000</Text>
                             </View>
                         </View>
                         <View style={estilosGlobal.contenedorBancos}>
@@ -63,7 +63,7 @@ export default function ingresos(){
                                 <Text style={estilosGlobal.nombreBanco}>Grupo Aval</Text>
                             </View>
                             <View style={estilosGlobal.contenedorValorBanco}>
-                                <Text style={estilosGlobal.textoValorBanco}>1.000.000</Text>
+                                <Text style={estilosGlobal.textoValorBanco}>$1.000.000</Text>
                             </View>
                         </View>
                     </View>
@@ -80,7 +80,7 @@ export default function ingresos(){
                     </View>
                     <View style={estilosGlobal.campoForm}>
                         <Button  mode="contained"  onPress={()=>navegacion.navigate('bienvenida')}>
-                            Agregar banco
+                            Agregar Banco
                         </Button>                 
                     </View>
                 </ScrollView>             
